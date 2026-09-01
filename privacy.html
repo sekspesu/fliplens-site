@@ -6,7 +6,7 @@ h1{font-size:32px;margin:28px 0 6px}h2{font-size:18px;margin:36px 0 8px;color:va
 .sub{color:var(--muted);margin-top:0}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:18px 0}
 a{color:var(--accent)}footer{margin-top:56px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:18px}
 .nav{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px;font-size:14px}</style></head><body><main><header><a href="index.html">Flipworthy</a><div class="nav"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></div></header>
-<h1>Privacy Policy</h1><p class="sub">Effective 24 August 2026</p>
+<h1>Privacy Policy</h1><p class="sub">Effective 1 September 2026</p>
 <p>Flipworthy is built to keep your data on your phone. This page explains exactly what leaves it, and why.</p>
 <h2>Photos you scan</h2>
 <p>When you tap Analyze, the photos you chose are sent over an encrypted connection to our server, which forwards them to an AI vision provider (currently Google's Gemini API) to identify the item and draft a listing. <strong>We do not store your photos on our servers.</strong> They are processed for that request and discarded; the provider handles them under its API terms. The copies you see in the app are saved only on your device.</p>
@@ -14,6 +14,10 @@ a{color:var(--accent)}footer{margin-top:56px;color:var(--muted);font-size:13px;b
 <p>Scan history, listings, prices, costs and profit figures are stored only on your device. We cannot see them. Deleting the app deletes them.</p>
 <h2>A device identifier</h2>
 <p>Flipworthy generates a random identifier and keeps it in your device's secure Keychain. It is sent with each scan so we can enforce the free-scan limit and protect the service from abuse. It is not linked to your name, email or Apple ID, and it is not used for advertising or tracking.</p>
+<h2>Services that identify and price an item</h2>
+<p>To recognise an item and find comparable listings, our server sends a short text description of it (brand, model, title, or a barcode you scanned) to these services. None of them receive your photos, your device identifier, or anything about you.</p>
+<ul><li><strong>eBay</strong> (Browse API) for current asking prices on live listings.</li><li><strong>Discogs</strong> for pressing details on records.</li><li><strong>Open Library</strong> for book details from an ISBN.</li><li><strong>Frankfurter</strong> (European Central Bank rates) for currency conversion. It receives only currency codes.</li></ul>
+<p>Our server runs on Supabase, which keeps short-lived request logs (such as IP address and timestamp) needed to operate and secure the service. Subscription receipts are verified with Apple so that only active subscribers get unlimited scans.</p>
 <h2>Subscriptions</h2>
 <p>Purchases are handled entirely by Apple. We never see your payment details. You can manage or cancel a subscription in your Apple ID settings at any time.</p>
 <h2>What we don't do</h2>
